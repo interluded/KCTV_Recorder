@@ -12,7 +12,7 @@ int main() {
 
     if (curl) {
         // Set the URL
-        curl_easy_setopt(curl, CURLOPT_URL, "http://64.95.150.17:8000");
+        curl_easy_setopt(curl, CURLOPT_URL, "REPLACE_WITH_OWN");
 
         // Perform the request, res will get the return code
         res = curl_easy_perform(curl);
