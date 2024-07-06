@@ -1,6 +1,10 @@
 #include <iostream>
 #include <curl/curl.h>
 
+size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {
+    return size * nmemb; // Ignore the contents, just return the size
+}
+
 int main() {
     CURL *curl;
     CURLcode res;
@@ -12,7 +16,10 @@ int main() {
 
     if (curl) {
         // Set the URL
-        curl_easy_setopt(curl, CURLOPT_URL, "REPLACE_WITH_OWN");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://64.95.150.17:8000");
+
+        // Set the callback function to ignore the response body
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
 
         // Perform the request, res will get the return code
         res = curl_easy_perform(curl);
@@ -37,4 +44,5 @@ int main() {
     // Global libcurl cleanup
     curl_global_cleanup();
 
-    re
+    return 0;
+}
