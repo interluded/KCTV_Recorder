@@ -1,6 +1,6 @@
 # KCTV_Checker
 
-This is a helpful set of programs to record Korean Central TV (KCTV) from KCNAWatch without recording the endless colour bars when there is no programming.
+This is a helpful set of programs to record Korean Central TV (KCTV) from KCNAWatch (or any m3u8 stream that shows colour bars at times) without recording the endless colour bars when there is no programming.
 
 ## Special thanks
 
