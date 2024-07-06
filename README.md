@@ -53,5 +53,5 @@ Contributions are welcome! Please open a pull request or contact the maintainer 
 
 ### License
 
-KCTV_Checker is released under the  License. See LICENSE for more information.
+KCTV_Checker is released under the GPL3 License. See LICENSE for more information.
 
